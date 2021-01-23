@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://v3.bootcss.com/examples/cover/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>JS学习站</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Cover Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./Cover Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Cover Template for Bootstrap_files/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./Cover Template for Bootstrap_files/ie-emulation-modes-warning.js.下载"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style>
+.translatorExtension {
+  font-family: Segoe UI, "Segoe UI Web (West European)", -apple-system,
+    BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  display: none;
+  padding: 4px;
+  position:absolute;
+  z-index:999999999;
+  max-width: 30vw;
+  line-height: 1.5em;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+}
+.translatorExtensionTheNewUI {
+  background: transparent;
+  border:1px solid;
+  backdrop-filter: blur(18px);
+  color: inherit;
+  font-size: inherit;
+}
+</style>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js">
+</script>
+<script src="https://unpkg.com/vue/dist/vue.js">
+</script>
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+//$(document).ready(function(){
+//  $("p").click(function(){
+//    $(this).hide();
+//  });
+//});
+</script>
+</head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">JS学习站</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="./iisstart.htm">IIS主页</a></li>
+                  <li><a href="./js.html">分页</a></li>
+                  <li><a href="./Cover Template for Bootstrap.html">来源</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">这是我的JavaScript学习主页</h1>
+            <p class="lead">这是一个使用 gitee page 编辑的静态网站，用来学习 JavaScript 时展示各种示例</p>
+            <p class="lead">
+              <a href="./angular.html" class="btn btn-lg btn-default">readme</a>
+            </p>
+            <p class="lead">
+              <button type="button" onclick="displayDate()" style="color: #000">显示日期</button>
+            </p>
+            <p id="demo" class="lead">日期</p>
+            <div ng-app="">
+              <p>名字 : <input type="text" ng-model="name"></p>
+              <h1>Hello {{name}}</h1>
+              <p ng-bind="name"></p>
+            </div>
+            <div id="app">
+              <p>{{ message }}</p>
+            </div>
+            <div id="example"></div>
+            <script type="text/babel">
+            ReactDOM.render(
+              <h1>Hello, world!</h1>,
+              document.getElementById('example')
+            );
+            </script>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>本页面基于 <a href="http://getbootstrap.com/">Bootstrap</a>, 由 <a href="https://wwkiyyx.gitee.io/wwk">wwk 使用 gitee page 编辑</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js!'
+      }
+    })
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Cover Template for Bootstrap_files/jquery.min.js.下载"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./Cover Template for Bootstrap_files/bootstrap.min.js.下载"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./Cover Template for Bootstrap_files/ie10-viewport-bug-workaround.js.下载"></script>
+  
+
+<div id="translatorExtensionContainer" class="translatorExtension" style="display: none;"></div><div class="translatorExtension" style="position: fixed; display: flex; justify-content: center; bottom: -40vh; left: 0px; right: 0px; margin: 0px auto; width: 100%; transition: all 80ms ease 0s;"></div></body></html>
